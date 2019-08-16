@@ -23,7 +23,7 @@ schedules:
   displayName: Scheduled
   branches:
     include:
-    - refs/heads/master
+    - master
   always: true
 
 pr:
