@@ -23,7 +23,6 @@ schedules:
   displayName: Scheduled
   branches:
     include:
-    - test1
     - master
   always: true
 
