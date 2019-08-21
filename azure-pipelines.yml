@@ -5,7 +5,7 @@
 
 trigger:
 - master
-- test7
+- test8
 
 pool:
   vmImage: 'Hosted'
