@@ -20,7 +20,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 schedules:
-- cron: "10 0 * * *"
+- cron: "5 0 * * *"
   displayName: Scheduled
   branches:
     include:
@@ -31,6 +31,4 @@ pr:
   branches:
     include:
     - master
-  paths:
-    include:
-    - sdk/keyvault/
+
