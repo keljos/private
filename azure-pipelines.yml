@@ -20,7 +20,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 schedules:
-- cron: "1 0 * * *"
+- cron: "2 0 * * *"
   displayName: Scheduled
   branches:
     include:
