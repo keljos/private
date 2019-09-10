@@ -8,7 +8,7 @@ trigger:
 #- test
 
 pool:
-  vmImage: 'Hosted'
+  vmImage: 'Default'
 
 steps:
 - script: echo Hello, world!!!!!!!
