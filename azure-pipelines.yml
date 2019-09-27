@@ -27,6 +27,7 @@ schedules:
   branches:
     include:
     - master
+    - test*
   always: true
 
 pr:
