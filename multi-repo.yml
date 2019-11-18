@@ -1,0 +1,34 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+resources:
+  repositories:
+  - repository: self
+    ref: 'refs/heads/master'
+  - repository: sources
+    type: git
+    name: sources
+    ref: 'refs/heads/master'
+  - repository: scripts
+    type: git
+    name: scripts
+    ref: 'refs/heads/master'
+
+jobs:
+- job: multirepo
+  pool: 'default'
+  steps:
+  - checkout: self
+    clean: true
+    path: yaml
+  - checkout: sources
+    clean: true
+    path: src
+  - checkout: scripts
+    clean: true
+    path: scripts
