@@ -11,11 +11,11 @@ resources:
   - repository: self
     ref: 'refs/heads/master'
   - repository: sources
-    type: git
+    type: github
     name: sources
     ref: 'refs/heads/master'
   - repository: scripts
-    type: git
+    type: github
     name: scripts
     ref: 'refs/heads/master'
 
