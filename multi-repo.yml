@@ -13,12 +13,12 @@ resources:
   - repository: sources
     type: github
     name: sources
-    endpoint: test
+    endpoint: MyFirstProject
     ref: 'refs/heads/master'
   - repository: scripts
     type: github
     name: scripts
-    endpoint: test
+    endpoint: MyFirstProject
     ref: 'refs/heads/master'
 
 jobs:
