@@ -10,14 +10,14 @@ resources:
   repositories:
   - repository: self
     ref: 'refs/heads/master'
-  - repository: Prachiti9/sources
+  - repository: sources
     type: github
-    name: sources
+    name: Prachiti9/sources
     endpoint: MyFirstProject
     ref: 'refs/heads/master'
-  - repository: Prachiti9/scripts
+  - repository: scripts
     type: github
-    name: scripts
+    name: Prachiti9/scripts
     endpoint: MyFirstProject
     ref: 'refs/heads/master'
 
