@@ -10,15 +10,15 @@ resources:
   repositories:
   - repository: self
     ref: 'refs/heads/master'
-  - repository: sources
+  - repository: Prachiti9/sources
     type: github
     name: sources
-    endpoint: test
+    endpoint: MyFirstProject
     ref: 'refs/heads/master'
-  - repository: scripts
+  - repository: Prachiti9/scripts
     type: github
     name: scripts
-    endpoint: test
+    endpoint: MyFirstProject
     ref: 'refs/heads/master'
 
 jobs:
