@@ -15,6 +15,10 @@ resources:
     name: Prachiti9/sources
     endpoint: test
     ref: 'refs/heads/master'
+    trigger:
+     branches:
+      include:
+       - master
   - repository: scripts
     type: github
     name: Prachiti9/scripts
