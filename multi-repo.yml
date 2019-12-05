@@ -13,12 +13,12 @@ resources:
   - repository: sources
     type: github
     name: Prachiti9/sources
-    endpoint: MyFirstProject
+    endpoint: test
     ref: 'refs/heads/master'
   - repository: scripts
     type: github
     name: Prachiti9/scripts
-    endpoint: MyFirstProject
+    endpoint: test
     ref: 'refs/heads/master'
 
 jobs:
