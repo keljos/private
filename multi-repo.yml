@@ -12,7 +12,7 @@ resources:
     ref: 'refs/heads/master'
   - repository: sources
     type: github
-    name: Prachiti9/sources
+    #name: Prachiti9/sources
     endpoint: project1
     ref: 'refs/heads/master'
     trigger:
@@ -21,7 +21,7 @@ resources:
        - master
   - repository: scripts
     type: github
-    name: Prachiti9/scripts
+    #name: Prachiti9/scripts
     endpoint: project1
     ref: 'refs/heads/master'
 
