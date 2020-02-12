@@ -27,7 +27,7 @@ resources:
 
 jobs:
 - job: multirepo
-  pool: 'default'
+  pool: 'Default'
   steps:
   - checkout: self
     clean: true
