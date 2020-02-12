@@ -12,8 +12,7 @@ resources:
     ref: 'refs/heads/master'
   - repository: sources
     type: github
-    #name: Prachiti9/sources
-    endpoint: project1
+    name: keljos/sources
     ref: 'refs/heads/master'
     trigger:
      branches:
@@ -21,8 +20,7 @@ resources:
        - master
   - repository: scripts
     type: github
-    #name: Prachiti9/scripts
-    endpoint: project1
+    name: keljos/scripts
     ref: 'refs/heads/master'
 
 jobs:
