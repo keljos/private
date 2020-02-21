@@ -11,20 +11,20 @@ resources:
   repositories:
   - repository: self
     ref: 'refs/heads/master'
-  - repository: sources
-    type: github
-    name: keljos/sources
-    ref: 'refs/heads/master'
-    endpoint: keljos
-    trigger:
-     branches:
-      include:
-       - master
-  - repository: scripts
-    type: github
-    name: keljos/scripts
-    ref: 'refs/heads/master'
-    endpoint: keljos
+#  - repository: sources
+#    type: github
+#    name: keljos/sources
+#    ref: 'refs/heads/master'
+#    endpoint: keljos
+#    trigger:
+#     branches:
+#      include:
+#       - master
+#  - repository: scripts
+#    type: github
+#    name: keljos/scripts
+#    ref: 'refs/heads/master'
+#    endpoint: keljos
 
 jobs:
 - job: multirepo
@@ -33,9 +33,9 @@ jobs:
   - checkout: self
     clean: true
     path: yaml
-  - checkout: sources
-    clean: true
-    path: src
-  - checkout: scripts
-    clean: true
-    path: scripts
+#  - checkout: sources
+#    clean: true
+#    path: src
+#  - checkout: scripts
+#    clean: true
+#    path: scripts
