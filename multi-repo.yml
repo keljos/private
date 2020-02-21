@@ -20,11 +20,11 @@ resources:
      branches:
       include:
        - master
-#  - repository: scripts
-#    type: github
-#    name: keljos/scripts
-#    ref: 'refs/heads/master'
-#    endpoint: keljos
+  - repository: scripts
+    type: github
+    name: keljos/scripts
+    ref: 'refs/heads/master'
+    endpoint: keljos
 
 jobs:
 - job: multirepo
@@ -36,6 +36,6 @@ jobs:
   - checkout: sources
     clean: true
     path: src
-#  - checkout: scripts
-#    clean: true
-#    path: scripts
+  - checkout: scripts
+    clean: true
+    path: scripts
