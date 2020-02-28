@@ -25,6 +25,10 @@ resources:
     name: keljos/scripts
     ref: 'refs/heads/master'
     endpoint: foo
+    trigger:
+     branches:
+      include:
+       - master
 
 jobs:
 - job: multirepo
