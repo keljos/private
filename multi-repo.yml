@@ -21,7 +21,7 @@ resources:
       include:
        - master
   - repository: scripts
-   type: github
+    type: github
     name: keljos/scripts
     ref: 'refs/heads/master'
     endpoint: foo
