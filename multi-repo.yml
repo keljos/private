@@ -2,7 +2,7 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-# Add a comment to kick off build again
+# Add a comment to kick off build
 
 trigger:
 - master          
@@ -11,15 +11,15 @@ resources:
   repositories:
   - repository: self
     ref: 'refs/heads/master'
-#  - repository: sources
-#    type: github
-#    name: keljos/sources
-#    ref: 'refs/heads/master'
-#    endpoint: foo
-#    trigger:
-#     branches:
-#      include:
-#       - master
+  - repository: sources
+    type: github
+    name: keljos/sources
+    ref: 'refs/heads/master'
+    endpoint: foo
+    trigger:
+     branches:
+      include:
+       - master
   - repository: scripts
     type: github
     name: keljos/scripts
@@ -37,9 +37,9 @@ jobs:
   - checkout: self
     clean: true
     path: yaml
-#  - checkout: sources
-#    clean: true
-#    path: src
+  - checkout: sources
+    clean: true
+    path: src
   - checkout: scripts
     clean: true
     path: scripts
