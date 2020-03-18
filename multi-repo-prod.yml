@@ -17,7 +17,7 @@ resources:
 
 jobs:
 - job: multirepo
-  pool: 'Hosted'
+  pool: "Hosted Ubuntu 1604"
   steps:
   - checkout: self
     clean: true
