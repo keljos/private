@@ -5,7 +5,13 @@
 # Add a comment to kick off build
 
 trigger:
-- master          
+- master
+
+pr:
+  branches:
+    include:
+      - master
+      - keljos*
 
 resources:
   repositories:
