@@ -11,9 +11,9 @@ resources:
   repositories:
   - repository: self
     ref: 'refs/heads/master'
-  - repository: foo
+  - repository: DTStest
     type: git
-    name: kejAppTest/foo
+    name: kejAppTest/DTStest
 
 jobs:
 - job: multirepo
