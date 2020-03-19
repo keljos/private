@@ -4,8 +4,8 @@
 # https://aka.ms/yaml
 # Add a comment to kick off build
 
-#trigger:
-#- master
+trigger:
+- master
 
 pr:
   branches:
