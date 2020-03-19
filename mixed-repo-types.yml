@@ -4,14 +4,14 @@
 # https://aka.ms/yaml
 # Add a comment to kick off build
 
-#trigger:
-#- master
+trigger:
+- master
 
-pr:
-  branches:
-    include:
-      - master
-      - keljos*
+#pr:
+#  branches:
+#    include:
+#      - master
+#      - keljos*
 
 resources:
   repositories:
