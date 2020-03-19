@@ -7,11 +7,11 @@
 trigger:
 - master
 
-#pr:
-#  branches:
-#    include:
-#      - master
-#      - keljos*
+pr:
+  branches:
+    include:
+      - master
+      - keljos*
 
 resources:
   repositories:
