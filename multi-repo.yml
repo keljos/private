@@ -29,8 +29,6 @@ resources:
      branches:
       include:
        - master
-    pr:
-     - master
 
 jobs:
 - job: multirepo
