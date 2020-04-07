@@ -25,6 +25,10 @@ resources:
     name: keljos/scripts
     ref: 'refs/heads/master'
     endpoint: foo
+    pr:
+     branches:
+      include:
+       - master
     trigger:
      branches:
       include:
