@@ -15,7 +15,7 @@ resources:
     type: github
     name: keljos/sources
     ref: 'refs/heads/master'
-    endpoint: foo
+    endpoint: keljos
     trigger:
      branches:
       include:
@@ -24,7 +24,7 @@ resources:
     type: github
     name: keljos/scripts
     ref: 'refs/heads/master'
-    endpoint: foo
+    endpoint: keljos
     pr:
      branches:
       include:
